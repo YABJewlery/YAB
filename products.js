@@ -574,7 +574,7 @@ const products = [
 
             image:"colaroctagonalv1.png",
 
-            stock:true
+            stock:false
         },
 
 
