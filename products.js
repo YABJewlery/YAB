@@ -331,7 +331,7 @@ const products = [
 
             image:"argolatorc.png",
 
-            stock:true
+            stock:false
         }
 
     ]
