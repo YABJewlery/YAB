@@ -305,7 +305,7 @@ const products = [
 {
     id:9,
 
-    name:"Brinco Argola Retorcido",
+    name:"Brinco Argola Torcido",
 
     category:"Brincos",
 
