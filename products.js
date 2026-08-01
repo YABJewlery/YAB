@@ -305,7 +305,7 @@ const products = [
 {
     id:9,
 
-    name:"Brinco Argola",
+    name:"Brinco Argola Retorcido",
 
     category:"Brincos",
 
@@ -331,7 +331,7 @@ const products = [
 
             image:"argolatorc.png",
 
-            stock:true
+            stock:false
         }
 
     ]
