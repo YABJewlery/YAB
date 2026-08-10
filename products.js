@@ -55,7 +55,7 @@ const products = [
 
             image:"anelfalanger.png",
 
-            stock:false
+            stock:true
         },
 
         {
