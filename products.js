@@ -58,7 +58,7 @@ variants:[
     {
         material:"Prata",
 
-        price:0,
+        price:0, // TODO: preço não preenchido no original — ajuste aqui
 
         image:"anelfalange.png",
 
@@ -93,7 +93,7 @@ variants:[
     {
         material:"Prata",
 
-        price:0,
+        price:0, // TODO: preço não preenchido no original — ajuste aqui
 
         image:"anelcanelado.png",
 
@@ -128,7 +128,7 @@ variants:[
     {
         material:"Prata",
 
-        price:0,
+        price:0, // TODO: preço não preenchido no original — ajuste aqui
 
         image:"anelpontas.png",
 
@@ -329,7 +329,7 @@ variants:[
 
         price:34.90,
 
-        image:".png",
+        image:".png", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
 
         stock:false
     },
@@ -340,7 +340,7 @@ variants:[
 
         price:29.90,
 
-        image:".png",
+        image:".png", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
 
         stock:false
     }
@@ -442,7 +442,7 @@ variants:[
     {
         material:"Prata",
 
-        price:0,
+        price:0, // TODO: preço não preenchido no original — ajuste aqui
 
         image:"chokerfita.png",
 
@@ -453,7 +453,7 @@ variants:[
 },
 
 {
-id:13,
+id:14,
 
 name:"Colar Coração Liso",
 
@@ -477,7 +477,7 @@ variants:[
     {
         material:"Prata",
 
-        price:0,
+        price:0, // TODO: preço não preenchido no original — ajuste aqui
 
         image:"colarcoracaol.png",
 
@@ -488,7 +488,7 @@ variants:[
 },
 
 {
-id:14,
+id:15,
 
 name:"Brinco Argola Torcido Pequena",
 
@@ -503,7 +503,7 @@ variants:[
 
         price:38.90,
 
-        image:".png",
+        image:".png", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
 
         stock:false
     },
@@ -514,7 +514,7 @@ variants:[
 
         price:33.90,
 
-        image:".png",
+        image:".png", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
 
         stock:false
     }
@@ -523,7 +523,7 @@ variants:[
 },
 
 {
-id:14,
+id:16,
 
 name:"Colar Octagonal Verde",
 
@@ -558,7 +558,7 @@ variants:[
 },
 
 {
-id:14,
+id:17,
 
 name:"Colar Ponto de Luz",
 
@@ -593,7 +593,7 @@ variants:[
 },
 
 {
-id:15,
+id:18,
 
 name:"Colar Veneziana",
 
@@ -617,7 +617,7 @@ variants:[
     {
         material:"Prata",
 
-        price:0,
+        price:0, // TODO: preço não preenchido no original — ajuste aqui
 
         image:"venezianabol.png",
 
@@ -628,7 +628,7 @@ variants:[
 },
 
 {
-id:16,
+id:19,
 
 name:"Pulseira Coração",
 
@@ -663,7 +663,7 @@ variants:[
 },
 
 {
-id:17,
+id:20,
 
 name:"Pulseira de Mão",
 
