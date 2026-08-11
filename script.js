@@ -123,7 +123,7 @@ function renderProducts(list){
 
             if(!variant.stock){
 
-                materialButton.classList.add("Em Breve");
+                materialButton.classList.add("indisponivel");
 
             }
 
