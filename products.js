@@ -485,7 +485,7 @@ const products = [
 },
 
 {
-    id:13,
+    id:14,
 
     name:"Colar Coração Liso",
 
@@ -521,7 +521,7 @@ const products = [
 },
 
 {
-    id:14,
+    id:15,
 
     name:"Brinco Argola Torcido Pequena",
 
@@ -557,7 +557,7 @@ const products = [
 },
 
 {
-    id:14,
+    id:16,
 
     name:"Colar Octagonal Verde",
 
@@ -593,7 +593,7 @@ const products = [
 },
 
 {
-    id:14,
+    id:17,
 
     name:"Colar Ponto de Luz",
 
@@ -629,7 +629,7 @@ const products = [
 },
 
 {
-    id:15,
+    id:18,
 
     name:"Colar Veneziana",
 
@@ -665,7 +665,7 @@ const products = [
 },
 
 {
-    id:16,
+    id:19,
 
     name:"Pulseira Coração",
 
@@ -701,7 +701,7 @@ const products = [
 },
 
 {
-    id:17,
+    id:20,
 
     name:"Pulseira de Mão",
 
