@@ -1,5 +1,6 @@
+
 /* ==========================================
-   ELEMENTOS
+ELEMENTOS
 ========================================== */
 
 const productsContainer = document.getElementById("products");
@@ -24,34 +25,14 @@ let currentCategory = "Todos";
 
 
 /* ==========================================
-   CARRINHO (SALVO)
+CARRINHO (SALVO)
 ========================================== */
 
-let cartItems = [];
-
-try {
-
-    cartItems =
-        JSON.parse(
-            localStorage.getItem("cart")
-        ) || [];
-
-    if (!Array.isArray(cartItems)) {
-        cartItems = [];
-    }
-
-} catch (error) {
-
-    cartItems = [];
-
-}
+let cartItems =
+    JSON.parse(localStorage.getItem("cart")) || [];
 
 
-/* ==========================================
-   SALVAR CARRINHO
-========================================== */
-
-function saveCart() {
+function saveCart(){
 
     localStorage.setItem(
         "cart",
@@ -62,10 +43,10 @@ function saveCart() {
 
 
 /* ==========================================
-   RENDER DOS PRODUTOS
+RENDER DOS PRODUTOS
 ========================================== */
 
-function renderProducts(list) {
+function renderProducts(list){
 
     productsContainer.innerHTML = "";
 
@@ -74,64 +55,63 @@ function renderProducts(list) {
         let currentVariant =
             product.variants[0];
 
+
         const clone =
             template.content.cloneNode(true);
+
 
         const img =
             clone.querySelector("img");
 
+
         const title =
             clone.querySelector("h3");
+
 
         const price =
             clone.querySelector(".price");
 
+
         const status =
             clone.querySelector(".status");
+
 
         const badge =
             clone.querySelector(".badge");
 
+
         const button =
             clone.querySelector(".buy");
 
-        const info =
-            clone.querySelector(".info");
-
-
-        /* ==========================================
-           PRODUTO
-        ========================================== */
 
         img.src =
             currentVariant.image;
 
+
         img.alt =
             product.name;
+
 
         title.textContent =
             product.name;
 
+
         price.textContent =
-            `R$ ${currentVariant.price
-                .toFixed(2)
-                .replace(".", ",")}`;
+            `R$ ${currentVariant.price.toFixed(2).replace(".",",")}`;
 
 
-        /* ==========================================
-           BADGE
-        ========================================== */
-
-        if (product.badge) {
+        if(product.badge){
 
             badge.textContent =
                 product.badge;
 
-            badge.style.display = "";
+            badge.style.display =
+                "";
 
-        } else {
+        }else{
 
-            badge.textContent = "";
+            badge.textContent =
+                "";
 
             badge.style.display =
                 "none";
@@ -142,16 +122,6 @@ function renderProducts(list) {
         status.textContent = "";
 
 
-        /* ==========================================
-           MATERIAIS
-        ========================================== */
-
-        /*
-         * O HTML já possui .materials dentro do template.
-         * Vamos utilizar esse elemento em vez de criar
-         * outro, evitando duplicação.
-         */
-
         const materials =
             clone.querySelector(".materials");
 
@@ -161,21 +131,20 @@ function renderProducts(list) {
             const materialButton =
                 document.createElement("button");
 
+
             materialButton.className =
                 "material-btn";
 
+
             materialButton.type =
                 "button";
+
 
             materialButton.textContent =
                 variant.material;
 
 
-            /* ==========================================
-               MATERIAL ATIVO
-            ========================================== */
-
-            if (variant === currentVariant) {
+            if(variant === currentVariant){
 
                 materialButton.classList.add(
                     "active"
@@ -184,22 +153,14 @@ function renderProducts(list) {
             }
 
 
-            /* ==========================================
-               MATERIAL SEM ESTOQUE
-            ========================================== */
-
-            if (!variant.stock) {
+            if(!variant.stock){
 
                 materialButton.classList.add(
-                    "Em-Breve"
+                    "Em Breve"
                 );
 
             }
 
-
-            /* ==========================================
-               TROCAR MATERIAL
-            ========================================== */
 
             materialButton.onclick = () => {
 
@@ -212,22 +173,14 @@ function renderProducts(list) {
 
 
                 price.textContent =
-                    `R$ ${variant.price
-                        .toFixed(2)
-                        .replace(".", ",")}`;
+                    `R$ ${variant.price.toFixed(2).replace(".",",")}`;
 
 
                 materials
-                    .querySelectorAll(
-                        ".material-btn"
-                    )
-                    .forEach(btn => {
-
-                        btn.classList.remove(
-                            "active"
-                        );
-
-                    });
+                    .querySelectorAll(".material-btn")
+                    .forEach(btn =>
+                        btn.classList.remove("active")
+                    );
 
 
                 materialButton.classList.add(
@@ -235,22 +188,21 @@ function renderProducts(list) {
                 );
 
 
-                /* ==========================================
-                   ESTOQUE DA VARIAÇÃO
-                ========================================== */
+                if(variant.stock){
 
-                if (variant.stock) {
-
-                    button.disabled = false;
+                    button.disabled =
+                        false;
 
                     button.textContent =
                         "Adicionar ao Carrinho";
 
-                    status.textContent = "";
+                    status.textContent =
+                        "";
 
-                } else {
+                }else{
 
-                    button.disabled = true;
+                    button.disabled =
+                        true;
 
                     button.textContent =
                         "Em Breve";
@@ -270,13 +222,10 @@ function renderProducts(list) {
         });
 
 
-        /* ==========================================
-           ESTOQUE INICIAL
-        ========================================== */
+        if(!currentVariant.stock){
 
-        if (!currentVariant.stock) {
-
-            button.disabled = true;
+            button.disabled =
+                true;
 
             button.textContent =
                 "Em Breve";
@@ -284,27 +233,13 @@ function renderProducts(list) {
             status.textContent =
                 "Produto indisponível";
 
-        } else {
-
-            button.disabled = false;
-
-            button.textContent =
-                "Adicionar ao Carrinho";
-
-            status.textContent = "";
-
         }
 
 
-        /* ==========================================
-           ADICIONAR AO CARRINHO
-        ========================================== */
-
         button.onclick = () => {
 
-            if (!currentVariant.stock) {
+            if(!currentVariant.stock)
                 return;
-            }
 
 
             addToCart({
@@ -339,10 +274,10 @@ function renderProducts(list) {
 
 
 /* ==========================================
-   PESQUISA
+PESQUISA
 ========================================== */
 
-if (search) {
+if(search){
 
     search.addEventListener(
         "input",
@@ -353,7 +288,7 @@ if (search) {
 
 
 /* ==========================================
-   FILTROS
+FILTROS
 ========================================== */
 
 filters.forEach(button => {
@@ -362,13 +297,9 @@ filters.forEach(button => {
         "click",
         () => {
 
-            filters.forEach(btn => {
-
-                btn.classList.remove(
-                    "active"
-                );
-
-            });
+            filters.forEach(btn =>
+                btn.classList.remove("active")
+            );
 
 
             button.classList.add(
@@ -389,15 +320,13 @@ filters.forEach(button => {
 
 
 /* ==========================================
-   ATUALIZAR PRODUTOS
+ATUALIZAR PRODUTOS
 ========================================== */
 
-function updateProducts() {
+function updateProducts(){
 
     const value =
-        search.value
-            .toLowerCase()
-            .trim();
+        search.value.toLowerCase();
 
 
     const filtered =
@@ -434,54 +363,38 @@ function updateProducts() {
 
 
 /* ==========================================
-   ABRIR CARRINHO
+ABRIR / FECHAR CARRINHO
 ========================================== */
 
-if (openCart) {
+openCart.addEventListener(
+    "click",
+    () => {
 
-    openCart.addEventListener(
-        "click",
-        () => {
+        cart.classList.add(
+            "open"
+        );
 
-            cart.classList.add(
-                "open"
-            );
+        overlay.classList.add(
+            "show"
+        );
 
-            overlay.classList.add(
-                "show"
-            );
-
-        }
-    );
-
-}
+    }
+);
 
 
-/* ==========================================
-   FECHAR CARRINHO
-========================================== */
-
-if (closeCart) {
-
-    closeCart.addEventListener(
-        "click",
-        closeCartMenu
-    );
-
-}
+closeCart.addEventListener(
+    "click",
+    closeCartMenu
+);
 
 
-if (overlay) {
-
-    overlay.addEventListener(
-        "click",
-        closeCartMenu
-    );
-
-}
+overlay.addEventListener(
+    "click",
+    closeCartMenu
+);
 
 
-function closeCartMenu() {
+function closeCartMenu(){
 
     cart.classList.remove(
         "open"
@@ -495,10 +408,10 @@ function closeCartMenu() {
 
 
 /* ==========================================
-   TOAST
+TOAST
 ========================================== */
 
-function showToast(message) {
+function showToast(message){
 
     const toast =
         document.createElement("div");
@@ -521,16 +434,16 @@ function showToast(message) {
 
         toast.remove();
 
-    }, 2500);
+    },2500);
 
 }
 
 
 /* ==========================================
-   ADICIONAR AO CARRINHO
+ADICIONAR AO CARRINHO
 ========================================== */
 
-function addToCart(product) {
+function addToCart(product){
 
     const item =
         cartItems.find(i =>
@@ -543,17 +456,17 @@ function addToCart(product) {
         );
 
 
-    if (item) {
+    if(item){
 
         item.quantity++;
 
-    } else {
+    }else{
 
         cartItems.push({
 
             ...product,
 
-            quantity: 1
+            quantity:1
 
         });
 
@@ -573,12 +486,13 @@ function addToCart(product) {
 
 
 /* ==========================================
-   ATUALIZAR CARRINHO
+ATUALIZAR CARRINHO
 ========================================== */
 
-function updateCart() {
+function updateCart(){
 
     cartContainer.innerHTML = "";
+
 
     let total = 0;
 
@@ -606,61 +520,55 @@ function updateCart() {
 
         div.innerHTML = `
 
-            <img
-                src="${item.image}"
-                alt="${item.name}"
-            >
+        <img
+            src="${item.image}"
+            alt="${item.name}"
+        >
 
-            <div class="cart-info">
+        <div class="cart-info">
 
-                <h4>${item.name}</h4>
+            <h4>${item.name}</h4>
 
-                <small>
-                    Material: ${item.material}
-                </small>
+            <small>
+                Material: ${item.material}
+            </small>
 
-                <div class="cart-price">
+            <div class="cart-price">
 
-                    R$ ${(item.price * item.quantity)
-                        .toFixed(2)
-                        .replace(".", ",")}
-
-                </div>
-
-                <div class="qty">
-
-                    <button
-                        class="minus"
-                        type="button"
-                    >
-                        −
-                    </button>
-
-                    <span>
-                        ${item.quantity}
-                    </span>
-
-                    <button
-                        class="plus"
-                        type="button"
-                    >
-                        +
-                    </button>
-
-                </div>
-
-                <div class="remove">
-                    Remover
-                </div>
+                R$ ${(item.price * item.quantity)
+                    .toFixed(2)
+                    .replace(".",",")}
 
             </div>
+
+            <div class="qty">
+
+                <button class="minus">
+                    −
+                </button>
+
+                <span>
+                    ${item.quantity}
+                </span>
+
+                <button class="plus">
+                    +
+                </button>
+
+            </div>
+
+            <div class="remove">
+                Remover
+            </div>
+
+        </div>
 
         `;
 
 
-        /* ==========================================
+        /* ======================
            BOTÃO +
-        ========================================== */
+        ====================== */
 
         div.querySelector(
             ".plus"
@@ -675,9 +583,9 @@ function updateCart() {
         };
 
 
-        /* ==========================================
+        /* ======================
            BOTÃO -
-        ========================================== */
+        ====================== */
 
         div.querySelector(
             ".minus"
@@ -686,7 +594,7 @@ function updateCart() {
             item.quantity--;
 
 
-            if (item.quantity <= 0) {
+            if(item.quantity <= 0){
 
                 cartItems =
                     cartItems.filter(i =>
@@ -709,9 +617,9 @@ function updateCart() {
         };
 
 
-        /* ==========================================
+        /* ======================
            REMOVER
-        ========================================== */
+        ====================== */
 
         div.querySelector(
             ".remove"
@@ -749,7 +657,7 @@ function updateCart() {
 
         total
             .toFixed(2)
-            .replace(".", ",");
+            .replace(".",",");
 
 
     cartCount.textContent =
@@ -759,14 +667,14 @@ function updateCart() {
 
 
 /* ==========================================
-   FINALIZAR PEDIDO
+FINALIZAR PEDIDO
 ========================================== */
 
 finish.addEventListener(
     "click",
     () => {
 
-        if (cartItems.length === 0) {
+        if(cartItems.length === 0){
 
             showToast(
                 "Carrinho vazio!"
@@ -792,7 +700,7 @@ finish.addEventListener(
             text +=
                 `Valor: R$ ${(item.price * item.quantity)
                     .toFixed(2)
-                    .replace(".", ",")}%0A%0A`;
+                    .replace(".",",")}%0A%0A`;
 
         });
 
@@ -819,10 +727,10 @@ finish.addEventListener(
 
 
 /* ==========================================
-   LIMPAR CARRINHO
+LIMPAR CARRINHO
 ========================================== */
 
-function clearCart() {
+function clearCart(){
 
     cartItems = [];
 
@@ -834,14 +742,14 @@ function clearCart() {
 
 
 /* ==========================================
-   TECLA ESC
+TECLA ESC
 ========================================== */
 
 document.addEventListener(
     "keydown",
     e => {
 
-        if (e.key === "Escape") {
+        if(e.key === "Escape"){
 
             closeCartMenu();
 
@@ -852,7 +760,7 @@ document.addEventListener(
 
 
 /* ==========================================
-   BOTÃO MODO ESCURO
+BOTÃO MODO ESCURO / CLARO
 ========================================== */
 
 const darkButton =
@@ -863,8 +771,38 @@ darkButton.className =
     "dark-toggle";
 
 
-darkButton.innerHTML =
-    "🌙";
+darkButton.type =
+    "button";
+
+
+darkButton.setAttribute(
+    "aria-label",
+    "Alternar modo claro e escuro"
+);
+
+
+/* Verifica se o usuário já tinha escolhido
+   o modo escuro anteriormente */
+
+const savedTheme =
+    localStorage.getItem("theme");
+
+
+if(savedTheme === "dark"){
+
+    document.body.classList.add(
+        "dark"
+    );
+
+    darkButton.innerHTML =
+        "☀️";
+
+}else{
+
+    darkButton.innerHTML =
+        "🌙";
+
+}
 
 
 document.body.appendChild(
@@ -892,19 +830,31 @@ darkButton.onclick = () => {
     );
 
 
-    if (
+    const isDark =
         document.body.classList.contains(
             "dark"
-        )
-    ) {
+        );
+
+
+    if(isDark){
 
         darkButton.innerHTML =
             "☀️";
 
-    } else {
+        localStorage.setItem(
+            "theme",
+            "dark"
+        );
+
+    }else{
 
         darkButton.innerHTML =
             "🌙";
+
+        localStorage.setItem(
+            "theme",
+            "light"
+        );
 
     }
 
@@ -912,7 +862,7 @@ darkButton.onclick = () => {
 
 
 /* ==========================================
-   INICIALIZAÇÃO
+INICIALIZAÇÃO
 ========================================== */
 
 // Carrega o carrinho salvo
@@ -923,7 +873,7 @@ renderProducts(products);
 
 
 /* ==========================================
-   ATUALIZAÇÃO AUTOMÁTICA
+ATUALIZAÇÃO AUTOMÁTICA
 ========================================== */
 
 window.addEventListener(
@@ -936,26 +886,14 @@ window.addEventListener(
             );
 
 
-        if (savedCart) {
+        if(savedCart){
 
-            try {
+            cartItems =
+                JSON.parse(
+                    savedCart
+                );
 
-                cartItems =
-                    JSON.parse(
-                        savedCart
-                    );
-
-                if (!Array.isArray(cartItems)) {
-                    cartItems = [];
-                }
-
-            } catch (error) {
-
-                cartItems = [];
-
-            }
-
-        } else {
+        }else{
 
             cartItems = [];
 
@@ -969,31 +907,30 @@ window.addEventListener(
 
 
 /* ==========================================
-   UTILIDADES
+UTILIDADES
 ========================================== */
 
-function formatPrice(value) {
+function formatPrice(value){
 
     return (
         "R$ " +
 
         value
             .toFixed(2)
-            .replace(".", ",")
+            .replace(".",",")
     );
 
 }
 
 
 /* ==========================================
-   PRELOAD DAS IMAGENS
+PRELOAD DAS IMAGENS
 ========================================== */
 
 products.forEach(product => {
 
-    if (!product.variants) {
+    if(!product.variants)
         return;
-    }
 
 
     product.variants.forEach(
@@ -1013,51 +950,50 @@ products.forEach(product => {
 
 
 /* ==========================================
-   BUSCA COM ENTER
+BUSCA COM ENTER
 ========================================== */
 
-if (search) {
+if(search){
 
     search.addEventListener(
         "keydown",
         e => {
 
-            if (e.key !== "Enter") {
-                return;
-            }
+            if(e.key === "Enter"){
+
+                const exists =
+                    products.some(product =>
+
+                        product.name
+                            .toLowerCase()
+                            .includes(
+                                search.value
+                                    .toLowerCase()
+                            )
+
+                    );
 
 
-            const exists =
-                products.some(product =>
+                if(!exists){
 
-                    product.name
-                        .toLowerCase()
-                        .includes(
-                            search.value
-                                .toLowerCase()
-                        )
-
-                );
+                    search.classList.remove(
+                        "error"
+                    );
 
 
-            if (!exists) {
-
-                search.classList.remove(
-                    "error"
-                );
+                    void search.offsetWidth;
 
 
-                void search.offsetWidth;
+                    search.classList.add(
+                        "error"
+                    );
 
 
-                search.classList.add(
-                    "error"
-                );
+                    showToast(
+                        "Produto não encontrado!"
+                    );
 
-
-                showToast(
-                    "Produto não encontrado!"
-                );
+                }
 
             }
 
@@ -1068,16 +1004,7 @@ if (search) {
 
 
 /* ==========================================
-   LIMPAR CARRINHO APENAS SE O USUÁRIO FECHAR A ABA
-========================================== */
-
-// window.addEventListener("beforeunload", () => {
-//     saveCart();
-// });
-
-
-/* ==========================================
-   CONSOLE
+CONSOLE
 ========================================== */
 
 console.clear();
