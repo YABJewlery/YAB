@@ -340,7 +340,7 @@ variants:[
 
         price:29.90,
 
-        image:"gotinhabayp.jpeg", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
+        image:"gotinhababyp.jpeg", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
 
         stock:false
     }
