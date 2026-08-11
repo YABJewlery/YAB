@@ -1,10 +1,3 @@
-Perfeito. Agora ficou claro: você quer **o `script.js` corrigido**, mantendo a estrutura e os produtos que você já tem, **sem adicionar produtos ou funcionalidades novas**.
-
-O principal problema no código que você enviou é que ele usa `product.variants[0]`, então o `products.js` precisa ter essa estrutura. Também há alguns pontos que podem quebrar o funcionamento, como os listeners de elementos que podem não existir.
-
-Vou corrigir **somente o `script.js`** e preservar a lógica que você já montou.
-
-```javascript
 /* ==========================================
    ELEMENTOS
 ========================================== */
