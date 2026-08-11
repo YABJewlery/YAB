@@ -172,7 +172,7 @@ function renderProducts(list){
         if(!currentVariant.stock){
 
             button.disabled=true;
-            button.textContent="ESGOTADO";
+            button.textContent="Em Breve";
             status.textContent="Produto indisponível";
 
         }
