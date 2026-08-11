@@ -329,7 +329,7 @@ variants:[
 
         price:34.90,
 
-        image:".png", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
+        image:"gotinhabay.jpeg", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
 
         stock:false
     },
@@ -340,7 +340,7 @@ variants:[
 
         price:29.90,
 
-        image:".png", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
+        image:"gotinhabayp.jpeg", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
 
         stock:false
     }
