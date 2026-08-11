@@ -123,7 +123,7 @@ function renderProducts(list){
 
             if(!variant.stock){
 
-                materialButton.classList.add("esgotado");
+                materialButton.classList.add("Em Breve");
 
             }
 
