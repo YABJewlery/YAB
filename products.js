@@ -97,7 +97,7 @@ variants:[
 
         image:"anelcanelado.png",
 
-        stock:true
+        stock:false
     }
 
 ]
