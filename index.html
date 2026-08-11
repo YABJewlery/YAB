@@ -1,27 +1,41 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 
 <head>
 
-    <meta charset="UTF-8">
+```
+<meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>YAB</title>
+<title>YAB - Catálogo 2026</title>
 
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+>
 
-    <script src="https://kit.fontawesome.com/6d2ea823d0.js" crossorigin="anonymous"></script>
+<script
+    src="https://kit.fontawesome.com/6d2ea823d0.js"
+    crossorigin="anonymous">
+</script>
+```
 
 </head>
 
 <body>
+
+```
+<!-- ==============================
+     CABEÇALHO
+     ============================== -->
 
 <header>
 
@@ -39,13 +53,18 @@
             type="text"
             id="search"
             placeholder="Pesquisar produtos..."
+            autocomplete="off"
         >
 
     </div>
 
     <div class="cart-button">
 
-        <button id="openCart">
+        <button
+            id="openCart"
+            type="button"
+            aria-label="Abrir carrinho"
+        >
 
             <h3>🛒</h3>
 
@@ -57,58 +76,107 @@
 
 </header>
 
+
+<!-- ==============================
+     CATEGORIAS
+     ============================== -->
+
 <nav>
 
-    <button class="filter active" data-category="Todos">
+    <button
+        class="filter active"
+        data-category="Todos"
+        type="button"
+    >
         Todos
     </button>
 
-    <button class="filter" data-category="Brincos">
+    <button
+        class="filter"
+        data-category="Brincos"
+        type="button"
+    >
         Brincos
     </button>
 
-    <button class="filter" data-category="Colares">
+    <button
+        class="filter"
+        data-category="Colares"
+        type="button"
+    >
         Colares
     </button>
 
-    <button class="filter" data-category="Anéis">
+    <button
+        class="filter"
+        data-category="Anéis"
+        type="button"
+    >
         Anéis
     </button>
 
-    <button class="filter" data-category="Pulseiras">
+    <button
+        class="filter"
+        data-category="Pulseiras"
+        type="button"
+    >
         Pulseiras
     </button>
 
 </nav>
 
+
+<!-- ==============================
+     PRODUTOS
+     ============================== -->
+
 <main>
 
     <section
         id="products"
-        class="products">
-    </section>
+        class="products"
+    ></section>
 
 </main>
 
+
+<!-- ==============================
+     FUNDO DO CARRINHO
+     ============================== -->
+
 <div
+    id="overlay"
+    class="overlay"
+></div>
+
+
+<!-- ==============================
+     CARRINHO
+     ============================== -->
+
+<aside
+    id="cart"
     class="cart"
-    id="cart">
+    aria-label="Carrinho de compras"
+>
 
     <div class="cart-header">
 
-        <h2>
-            Meu Carrinho
-        </h2>
+        <h2>Meu Carrinho</h2>
 
-        <button id="closeCart">
+        <button
+            id="closeCart"
+            type="button"
+            aria-label="Fechar carrinho"
+        >
             ×
         </button>
 
     </div>
 
-    <div id="cartItems">
 
-    </div>
+    <div id="cartItems"></div>
+
 
     <div class="cart-footer">
 
@@ -117,60 +185,86 @@
             Total
 
             <span id="cartTotal">
-
-                R$0,00
-
+                R$ 0,00
             </span>
 
         </h3>
 
-        <button id="finish">
-
+        <button
+            id="finish"
+            type="button"
+        >
             Finalizar Pedido
-
         </button>
 
     </div>
 
-</div>
+</aside>
 
-<div id="overlay"></div>
+
+<!-- ==============================
+     TEMPLATE DOS PRODUTOS
+     ============================== -->
 
 <template id="product-template">
 
-    <div class="card">
+    <article class="card">
 
         <div class="image">
 
-            <img src="" alt="">
+            <img
+                src=""
+                alt=""
+                loading="lazy"
+            >
 
             <span class="badge"></span>
 
         </div>
 
+
         <div class="info">
 
             <h3></h3>
+
+            <div class="materials"></div>
 
             <p class="price"></p>
 
             <p class="status"></p>
 
-            <button class="buy">
-
+            <button
+                class="buy"
+                type="button"
+            >
                 Adicionar ao Carrinho
-
             </button>
 
         </div>
 
-    </div>
+    </article>
 
 </template>
 
-<script src="products.js"></script>
 
-<script src="script.js"></script>
+<!-- ==============================
+     JAVASCRIPT
+     
+     IMPORTANTE:
+     products.js vem PRIMEIRO.
+     script.js vem DEPOIS.
+     ============================== -->
+
+<script
+    src="products.js"
+    defer>
+</script>
+
+<script
+    src="script.js"
+    defer>
+</script>
+```
 
 </body>
 
