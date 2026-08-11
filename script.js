@@ -27,9 +27,29 @@ let currentCategory = "Todos";
    CARRINHO (SALVO)
 ========================================== */
 
-let cartItems =
-    JSON.parse(localStorage.getItem("cart")) || [];
+let cartItems = [];
 
+try {
+
+    cartItems =
+        JSON.parse(
+            localStorage.getItem("cart")
+        ) || [];
+
+    if (!Array.isArray(cartItems)) {
+        cartItems = [];
+    }
+
+} catch (error) {
+
+    cartItems = [];
+
+}
+
+
+/* ==========================================
+   SALVAR CARRINHO
+========================================== */
 
 function saveCart() {
 
@@ -51,7 +71,8 @@ function renderProducts(list) {
 
     list.forEach(product => {
 
-        let currentVariant = product.variants[0];
+        let currentVariant =
+            product.variants[0];
 
         const clone =
             template.content.cloneNode(true);
@@ -74,9 +95,12 @@ function renderProducts(list) {
         const button =
             clone.querySelector(".buy");
 
+        const info =
+            clone.querySelector(".info");
+
 
         /* ==========================================
-           INFORMAÇÕES DO PRODUTO
+           PRODUTO
         ========================================== */
 
         img.src =
@@ -103,10 +127,11 @@ function renderProducts(list) {
             badge.textContent =
                 product.badge;
 
-            badge.style.display =
-                "";
+            badge.style.display = "";
 
         } else {
+
+            badge.textContent = "";
 
             badge.style.display =
                 "none";
@@ -114,22 +139,21 @@ function renderProducts(list) {
         }
 
 
-        /* ==========================================
-           STATUS
-        ========================================== */
-
         status.textContent = "";
 
 
         /* ==========================================
-           MATERIAIS / VARIAÇÕES
+           MATERIAIS
         ========================================== */
 
-        const materials =
-            document.createElement("div");
+        /*
+         * O HTML já possui .materials dentro do template.
+         * Vamos utilizar esse elemento em vez de criar
+         * outro, evitando duplicação.
+         */
 
-        materials.className =
-            "materials";
+        const materials =
+            clone.querySelector(".materials");
 
 
         product.variants.forEach(variant => {
@@ -140,12 +164,15 @@ function renderProducts(list) {
             materialButton.className =
                 "material-btn";
 
+            materialButton.type =
+                "button";
+
             materialButton.textContent =
                 variant.material;
 
 
             /* ==========================================
-               VARIAÇÃO ATUAL
+               MATERIAL ATIVO
             ========================================== */
 
             if (variant === currentVariant) {
@@ -158,29 +185,23 @@ function renderProducts(list) {
 
 
             /* ==========================================
-               PRODUTO SEM ESTOQUE
+               MATERIAL SEM ESTOQUE
             ========================================== */
 
             if (!variant.stock) {
 
                 materialButton.classList.add(
-                    "disabled"
+                    "Em-Breve"
                 );
-
-                materialButton.disabled = true;
 
             }
 
 
             /* ==========================================
-               TROCAR VARIAÇÃO
+               TROCAR MATERIAL
             ========================================== */
 
             materialButton.onclick = () => {
-
-                if (!variant.stock) {
-                    return;
-                }
 
                 currentVariant =
                     variant;
@@ -197,7 +218,9 @@ function renderProducts(list) {
 
 
                 materials
-                    .querySelectorAll(".material-btn")
+                    .querySelectorAll(
+                        ".material-btn"
+                    )
                     .forEach(btn => {
 
                         btn.classList.remove(
@@ -213,7 +236,7 @@ function renderProducts(list) {
 
 
                 /* ==========================================
-                   ESTOQUE
+                   ESTOQUE DA VARIAÇÃO
                 ========================================== */
 
                 if (variant.stock) {
@@ -248,19 +271,7 @@ function renderProducts(list) {
 
 
         /* ==========================================
-           INSERE MATERIAIS
-        ========================================== */
-
-        clone
-            .querySelector(".info")
-            .insertBefore(
-                materials,
-                status
-            );
-
-
-        /* ==========================================
-           PRODUTO INICIAL SEM ESTOQUE
+           ESTOQUE INICIAL
         ========================================== */
 
         if (!currentVariant.stock) {
@@ -273,11 +284,20 @@ function renderProducts(list) {
             status.textContent =
                 "Produto indisponível";
 
+        } else {
+
+            button.disabled = false;
+
+            button.textContent =
+                "Adicionar ao Carrinho";
+
+            status.textContent = "";
+
         }
 
 
         /* ==========================================
-           BOTÃO COMPRAR
+           ADICIONAR AO CARRINHO
         ========================================== */
 
         button.onclick = () => {
@@ -342,11 +362,13 @@ filters.forEach(button => {
         "click",
         () => {
 
-            filters.forEach(btn =>
+            filters.forEach(btn => {
+
                 btn.classList.remove(
                     "active"
-                )
-            );
+                );
+
+            });
 
 
             button.classList.add(
@@ -373,9 +395,9 @@ filters.forEach(button => {
 function updateProducts() {
 
     const value =
-        search
-            ? search.value.toLowerCase()
-            : "";
+        search.value
+            .toLowerCase()
+            .trim();
 
 
     const filtered =
@@ -412,7 +434,7 @@ function updateProducts() {
 
 
 /* ==========================================
-   ABRIR / FECHAR CARRINHO
+   ABRIR CARRINHO
 ========================================== */
 
 if (openCart) {
@@ -434,6 +456,10 @@ if (openCart) {
 
 }
 
+
+/* ==========================================
+   FECHAR CARRINHO
+========================================== */
 
 if (closeCart) {
 
@@ -457,22 +483,13 @@ if (overlay) {
 
 function closeCartMenu() {
 
-    if (cart) {
+    cart.classList.remove(
+        "open"
+    );
 
-        cart.classList.remove(
-            "open"
-        );
-
-    }
-
-
-    if (overlay) {
-
-        overlay.classList.remove(
-            "show"
-        );
-
-    }
+    overlay.classList.remove(
+        "show"
+    );
 
 }
 
@@ -561,13 +578,7 @@ function addToCart(product) {
 
 function updateCart() {
 
-    if (!cartContainer) {
-        return;
-    }
-
-
     cartContainer.innerHTML = "";
-
 
     let total = 0;
 
@@ -618,7 +629,10 @@ function updateCart() {
 
                 <div class="qty">
 
-                    <button class="minus">
+                    <button
+                        class="minus"
+                        type="button"
+                    >
                         −
                     </button>
 
@@ -626,7 +640,10 @@ function updateCart() {
                         ${item.quantity}
                     </span>
 
-                    <button class="plus">
+                    <button
+                        class="plus"
+                        type="button"
+                    >
                         +
                     </button>
 
@@ -726,25 +743,17 @@ function updateCart() {
     });
 
 
-    if (cartTotal) {
+    cartTotal.textContent =
 
-        cartTotal.textContent =
+        "R$ " +
 
-            "R$ " +
-
-            total
-                .toFixed(2)
-                .replace(".", ",");
-
-    }
+        total
+            .toFixed(2)
+            .replace(".", ",");
 
 
-    if (cartCount) {
-
-        cartCount.textContent =
-            quantity;
-
-    }
+    cartCount.textContent =
+        quantity;
 
 }
 
@@ -753,64 +762,60 @@ function updateCart() {
    FINALIZAR PEDIDO
 ========================================== */
 
-if (finish) {
+finish.addEventListener(
+    "click",
+    () => {
 
-    finish.addEventListener(
-        "click",
-        () => {
+        if (cartItems.length === 0) {
 
-            if (cartItems.length === 0) {
-
-                showToast(
-                    "Carrinho vazio!"
-                );
-
-                return;
-
-            }
-
-
-            let text =
-                "Olá! Gostaria de fazer um pedido:%0A%0A";
-
-
-            cartItems.forEach(item => {
-
-                text +=
-                    `${item.quantity}x ${item.name}%0A`;
-
-                text +=
-                    `Material: ${item.material}%0A`;
-
-                text +=
-                    `Valor: R$ ${(item.price * item.quantity)
-                        .toFixed(2)
-                        .replace(".", ",")}%0A%0A`;
-
-            });
-
-
-            text +=
-                "Total: ";
-
-
-            text +=
-                cartTotal.textContent;
-
-
-            const phone =
-                "5511992144416";
-
-
-            window.open(
-                `https://wa.me/${phone}?text=${text}`,
-                "_blank"
+            showToast(
+                "Carrinho vazio!"
             );
 
-        }
-    );
+            return;
 
-}
+        }
+
+
+        let text =
+            "Olá! Gostaria de fazer um pedido:%0A%0A";
+
+
+        cartItems.forEach(item => {
+
+            text +=
+                `${item.quantity}x ${item.name}%0A`;
+
+            text +=
+                `Material: ${item.material}%0A`;
+
+            text +=
+                `Valor: R$ ${(item.price * item.quantity)
+                    .toFixed(2)
+                    .replace(".", ",")}%0A%0A`;
+
+        });
+
+
+        text +=
+            "Total: ";
+
+
+        text +=
+            cartTotal.textContent;
+
+
+        const phone =
+            "5511992144416";
+
+
+        window.open(
+            `https://wa.me/${phone}?text=${text}`,
+            "_blank"
+        );
+
+    }
+);
 
 
 /* ==========================================
@@ -940,7 +945,11 @@ window.addEventListener(
                         savedCart
                     );
 
-            } catch {
+                if (!Array.isArray(cartItems)) {
+                    cartItems = [];
+                }
+
+            } catch (error) {
 
                 cartItems = [];
 
@@ -1060,8 +1069,6 @@ if (search) {
 
 /* ==========================================
    LIMPAR CARRINHO APENAS SE O USUÁRIO FECHAR A ABA
-   (opcional: remova este bloco se quiser manter
-   o carrinho para sempre)
 ========================================== */
 
 // window.addEventListener("beforeunload", () => {
