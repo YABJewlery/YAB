@@ -343,7 +343,7 @@ const products = [
 {
     id:10,
 
-    name:"Brinco Gota Lisa",
+    name:"Brinco Gotinha Baby",
 
     category:"Brincos",
 
@@ -354,9 +354,9 @@ const products = [
         {
             material:"Ouro",
 
-            price:39.90,
+            price:34.90,
 
-            image:"brincogota1.png",
+            image:".png",
 
             stock:false
         },
@@ -365,9 +365,9 @@ const products = [
         {
             material:"Prata",
 
-            price:0,
+            price:29.90,
 
-            image:"brincogota.png",
+            image:".png",
 
             stock:false
         }
@@ -523,20 +523,20 @@ const products = [
 {
     id:14,
 
-    name:"Colar Gota",
+    name:"Brinco Argola Torcido Pequena",
 
-    category:"Colares",
+    category:"Brincos",
 
-    badge:"",
+    badge:"Novidade",
 
     variants:[
 
         {
             material:"Ouro",
 
-            price:69.90,
+            price:38.90,
 
-            image:"colargotag.png",
+            image:".png",
 
             stock:false
         },
@@ -545,9 +545,9 @@ const products = [
         {
             material:"Prata",
 
-            price:0,
+            price:33.90,
 
-            image:"colargotag1.png",
+            image:".png",
 
             stock:false
         }
