@@ -490,7 +490,7 @@ variants:[
 {
 id:15,
 
-name:"Brinco Argola Torcido Pequena",
+name:"Brinco Argola Torcido P",
 
 category:"Brincos",
 
@@ -503,7 +503,7 @@ variants:[
 
         price:42.90,
 
-        image:".png", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
+        image:"argolapequena.jpg.jpeg", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
 
         stock:true
     },
@@ -514,7 +514,7 @@ variants:[
 
         price:36.90,
 
-        image:".png", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
+        image:"argolapequenaP.jpg.jpeg", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
 
         stock:true
     }
