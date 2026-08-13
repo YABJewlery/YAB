@@ -331,7 +331,7 @@ variants:[
 
         image:"gotinhabay.jpeg", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
 
-        stock:false
+        stock:true
     },
 
 
@@ -342,7 +342,7 @@ variants:[
 
         image:"gotinhababyp.jpeg", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
 
-        stock:false
+        stock:true
     }
 
 ]
@@ -366,7 +366,7 @@ variants:[
 
         image:"brincogotariscado1.png",
 
-        stock:false
+        stock:true
     },
 
 
@@ -501,22 +501,22 @@ variants:[
     {
         material:"Ouro",
 
-        price:38.90,
+        price:42.90,
 
         image:".png", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
 
-        stock:false
+        stock:true
     },
 
 
     {
         material:"Prata",
 
-        price:33.90,
+        price:36.90,
 
         image:".png", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
 
-        stock:false
+        stock:true
     }
 
 ]
@@ -540,7 +540,7 @@ variants:[
 
         image:"colaroctagonalv1.png",
 
-        stock:false
+        stock:true
     },
 
 
@@ -575,7 +575,7 @@ variants:[
 
         image:"pontodeluz1.png",
 
-        stock:false
+        stock:true
     },
 
 
@@ -656,7 +656,7 @@ variants:[
 
         image:"coracaoverde1.png",
 
-        stock:false
+        stock:true
     }
 
 ]
@@ -680,7 +680,7 @@ variants:[
 
         image:"pulseirarisquinhoam.png",
 
-        stock:false
+        stock:true
     },
 
 
