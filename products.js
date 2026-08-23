@@ -272,7 +272,7 @@ variants:[
 
         image:"anelplacalisa.png",
 
-        stock:true
+        stock:false
     }
 
 ]
@@ -575,7 +575,7 @@ variants:[
 
         image:"pontodeluz1.png",
 
-        stock:true
+        stock:false
     },
 
 
