@@ -156,7 +156,7 @@ variants:[
 
         image:"quadrado1.png",
 
-        stock:true
+        stock:false
     },
 
 
@@ -505,7 +505,7 @@ variants:[
 
         image:"argolapequena.jpg.jpeg", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
 
-        stock:true
+        stock:false
     },
 
 
