@@ -505,7 +505,7 @@ variants:[
 
         image:"argolapequena.jpg.jpeg", // TODO: nome do arquivo de imagem não preenchido — ajuste aqui
 
-        stock:false
+        stock:true
     },
 
 
