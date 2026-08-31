@@ -1,7 +1,7 @@
 const products = [
     {
         id: 21,
-        name: "Colar T",
+        name: "Colar Choloris",
         category: "Colares",
         badge: "Novidade",
         variants: [
@@ -21,7 +21,7 @@ const products = [
     },
     {
         id: 22,
-        name: "Brinco T",
+        name: "Brinco Tríde",
         category: "Brincos",
         badge: "Novidade",
         variants: [
@@ -41,7 +41,7 @@ const products = [
     },
     {
         id: 23,
-        name: "Colar S e L",
+        name: "Colar Kairos",
         category: "Colares",
         badge: "Novidade",
         variants: [
@@ -61,7 +61,7 @@ const products = [
     },
     {
         id: 24,
-        name: "Brinco S e L",
+        name: "Brinco Kairos",
         category: "Brincos",
         badge: "Novidade",
         variants: [
