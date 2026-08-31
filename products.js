@@ -698,43 +698,44 @@ variants:[
 },
 
     
+{
+id:21,
+
+name:"Colar T",
+
+category:"Colares",
+
+badge:"Novidade",
+
+variants:[
+
     {
-        id:21,
+        material:"Ouro",
 
-        name:"Colar T",
+        price:0.00,
 
-        category:"Colares",
+        image:"",
 
-        badge:"Novidade",
+        stock:false
+    },
 
-        variants:[
 
-            {
-                material:"Ouro",
+    {
+        material:"Prata",
 
-                price:0.00,
+        price:0.00,
 
-                image:"",
+        image:"",
 
-                stock:false
-            },
-
-            {
-                material:"Prata",
-
-                price:0.00,
-
-                image:"",
-
-                stock:false
-            }
-
-        ]
+        stock:false
     }
+
+]
+}
 
 ];
 
 console.log(
-    "Produtos carregados:",
-    products.length
+"Produtos carregados:",
+products.length
 );
