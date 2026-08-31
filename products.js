@@ -551,7 +551,7 @@ variants:[
 
         image:"colaroctagonalv.png",
 
-        stock:true
+        stock:false
     }
 
 ]
@@ -680,7 +680,7 @@ variants:[
 
         image:"pulseirarisquinhoam.png",
 
-        stock:true
+        stock:false
     },
 
 
