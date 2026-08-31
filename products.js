@@ -717,7 +717,7 @@ variants:[
             stock: false
         }
     ]
-}
+},
 
 
     {
@@ -739,7 +739,7 @@ variants:[
             stock: false
         }
     ]
-}
+},
 
 
 {
@@ -761,7 +761,7 @@ variants:[
             stock: false
         }
     ]
-}
+},
 
 
 {
