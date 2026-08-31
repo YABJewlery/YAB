@@ -144,7 +144,7 @@ variants:[
     {
         material:"Prata",
 
-        price:0, // TODO: preço não preenchido no original — ajuste aqui
+        price:0.00 // TODO: preço não preenchido no original — ajuste aqui
 
         image:"anelfalange.png",
 
@@ -179,7 +179,7 @@ variants:[
     {
         material:"Prata",
 
-        price:0, // TODO: preço não preenchido no original — ajuste aqui
+        price:0.00 // TODO: preço não preenchido no original — ajuste aqui
 
         image:"anelcanelado.png",
 
