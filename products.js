@@ -1518,7 +1518,7 @@ variants:[
 },
 
 {
-id:20,
+id: 20,
 
 name:"Pulseira de Mão",
 
