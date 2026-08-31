@@ -494,7 +494,7 @@ name:"Brinco Argola Torcido P",
 
 category:"Brincos",
 
-badge:"Novidade",
+badge:"",
 
 variants:[
 
@@ -695,7 +695,40 @@ variants:[
     }
 
 ]
-}
+},
+
+    {
+id:21,
+
+name:"Colar T",
+
+category:"Colares",
+
+badge:"Novidade",
+
+variants:[
+
+    {
+        material:"Ouro",
+
+        price:00.00,
+
+        image:"",
+
+        stock:false
+    },
+
+
+    {
+        material:"Prata",
+
+        price:00.00,
+
+        image:"",
+
+        stock:false
+    }
+
 
 ];
 
