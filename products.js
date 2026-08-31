@@ -719,6 +719,72 @@ variants:[
     ]
 }
 
+
+    {
+    id: 22,
+    name: "Brinco T",
+    category: "Brincos",
+    badge: "Novidade",
+    variants: [
+        {
+            material: "Ouro",
+            price: 0.00,
+            image: "",
+            stock: false
+        },
+        {
+            material: "Prata",
+            price: 0.00,
+            image: "",
+            stock: false
+        }
+    ]
+}
+
+
+{
+    id: 23,
+    name: "Colar S e L",
+    category: "Colares",
+    badge: "Novidade",
+    variants: [
+        {
+            material: "Ouro",
+            price: 0.00,
+            image: "",
+            stock: false
+        },
+        {
+            material: "Prata",
+            price: 0.00,
+            image: "",
+            stock: false
+        }
+    ]
+}
+
+
+{
+    id: 24,
+    name: "Brinco S e L",
+    category: "Brincos",
+    badge: "Novidade",
+    variants: [
+        {
+            material: "Ouro",
+            price: 0.00,
+            image: "",
+            stock: false
+        },
+        {
+            material: "Prata",
+            price: 0.00,
+            image: "",
+            stock: false
+        }
+    ]
+}
+
 ];
 
 console.log(
