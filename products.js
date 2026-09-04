@@ -8,14 +8,14 @@ const products = [
             {
                 material: "Ouro",
                 price: 89.90,
-                image: "",
-                stock: false
+                image: "cholorisouro.png",
+                stock: true
             },
             {
                 material: "Prata",
                 price: 79.90,
-                image: "",
-                stock: false
+                image: "cholorisprata.png",
+                stock: true
             }
         ]
     },
@@ -28,14 +28,14 @@ const products = [
             {
                 material: "Ouro",
                 price: 46.90,
-                image: "",
-                stock: false
+                image: "triadeouro.png",
+                stock: true
             },
             {
                 material: "Prata",
                 price: 43.90,
-                image: "",
-                stock: false
+                image: "triadeprata.png",
+                stock: true
             }
         ]
     },
@@ -48,14 +48,14 @@ const products = [
             {
                 material: "Ouro",
                 price: 74.90,
-                image: "",
-                stock: false
+                image: "colarkairosouro.png",
+                stock: true
             },
             {
                 material: "Prata",
                 price: 69.90,
-                image: "",
-                stock: false
+                image: "colarkairosprata.png",
+                stock: true
             }
         ]
     },
@@ -68,14 +68,14 @@ const products = [
             {
                 material: "Ouro",
                 price: 46.90,
-                image: "",
-                stock: false
+                image: "kairosouro.png",
+                stock: true
             },
             {
                 material: "Prata",
                 price: 43.90,
-                image: "",
-                stock: false
+                image: "kairosprata.png",
+                stock: true
             }
         ]
     },
@@ -416,26 +416,6 @@ const products = [
                 price: 54.90,
                 image: "pontodeluz.png",
                 stock: true
-            }
-        ]
-    },
-    {
-        id: 18,
-        name: "Colar Veneziana",
-        category: "Colares",
-        badge: "",
-        variants: [
-            {
-                material: "Ouro",
-                price: 59.90,
-                image: "venezianabol1.png",
-                stock: false
-            },
-            {
-                material: "Prata",
-                price: 0.00,
-                image: "venezianabol.png",
-                stock: false
             }
         ]
     },
