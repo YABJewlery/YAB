@@ -275,7 +275,7 @@ const products = [
                 material: "Prata",
                 price: 29.90,
                 image: "gotinhababyp.jpeg",
-                stock: true
+                stock: false
             }
         ]
     },
