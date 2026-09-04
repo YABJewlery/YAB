@@ -48,7 +48,7 @@ const products = [
             {
                 material: "Ouro",
                 price: 74.90,
-                image: "colarkairosouro.png",
+                image: "colarkariosouro.png",
                 stock: true
             },
             {
