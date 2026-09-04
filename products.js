@@ -7,13 +7,13 @@ const products = [
         variants: [
             {
                 material: "Ouro",
-                price: 0.00,
+                price: 89.90,
                 image: "",
                 stock: false
             },
             {
                 material: "Prata",
-                price: 0.00,
+                price: 79.90,
                 image: "",
                 stock: false
             }
@@ -21,19 +21,19 @@ const products = [
     },
     {
         id: 22,
-        name: "Brinco Tríde",
+        name: "Brinco Tríade",
         category: "Brincos",
         badge: "Novidade",
         variants: [
             {
                 material: "Ouro",
-                price: 0.00,
+                price: 46.90,
                 image: "",
                 stock: false
             },
             {
                 material: "Prata",
-                price: 0.00,
+                price: 43.90,
                 image: "",
                 stock: false
             }
@@ -41,19 +41,19 @@ const products = [
     },
     {
         id: 23,
-        name: "Colar Kairos",
+        name: "Colar Duplo Kairos",
         category: "Colares",
         badge: "Novidade",
         variants: [
             {
                 material: "Ouro",
-                price: 0.00,
+                price: 74.90,
                 image: "",
                 stock: false
             },
             {
                 material: "Prata",
-                price: 0.00,
+                price: 69.90,
                 image: "",
                 stock: false
             }
@@ -67,13 +67,13 @@ const products = [
         variants: [
             {
                 material: "Ouro",
-                price: 0.00,
+                price: 46.90,
                 image: "",
                 stock: false
             },
             {
                 material: "Prata",
-                price: 0.00,
+                price: 43.90,
                 image: "",
                 stock: false
             }
