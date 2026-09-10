@@ -15,7 +15,7 @@ const products = [
                 material: "Prata",
                 price: 79.90,
                 image: "cholorisprata.png",
-                stock: true
+                stock: false
             }
         ]
     },
@@ -35,7 +35,7 @@ const products = [
                 material: "Prata",
                 price: 43.90,
                 image: "triadeprata.png",
-                stock: true
+                stock: false
             }
         ]
     },
