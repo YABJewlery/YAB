@@ -129,7 +129,7 @@ const products = [
                 material: "Ouro",
                 price: 49.90,
                 image: "anelcanelado1.png",
-                stock: true
+                stock: false
             },
             {
                 material: "Prata",
