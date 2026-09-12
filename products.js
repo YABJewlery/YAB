@@ -369,7 +369,7 @@ const products = [
                 material: "Ouro",
                 price: 42.90,
                 image: "argolapequena.jpg.jpeg",
-                stock: true
+                stock: false
             },
             {
                 material: "Prata",
