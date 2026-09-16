@@ -1,44 +1,5 @@
 const products = [
-    {
-        id: 21,
-        name: "Colar Choloris",
-        category: "Colares",
-        badge: "",
-        variants: [
-            {
-                material: "Ouro",
-                price: 89.90,
-                image: "cholorisouro.png",
-                stock: false
-            },
-            {
-                material: "Prata",
-                price: 79.90,
-                image: "cholorisprata.png",
-                stock: false
-            }
-        ]
-    },
-    {
-        id: 22,
-        name: "Brinco Tríade",
-        category: "Brincos",
-        badge: "",
-        variants: [
-            {
-                material: "Ouro",
-                price: 46.90,
-                image: "triadeouro.png",
-                stock: false
-            },
-            {
-                material: "Prata",
-                price: 43.90,
-                image: "triadeprata.png",
-                stock: false
-            }
-        ]
-    },
+            
     {
         id: 23,
         name: "Colar Duplo Kairos",
