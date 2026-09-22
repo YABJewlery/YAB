@@ -300,27 +300,8 @@ const products = [
             }
         ]
     },
-    {
-        id: 14,
-        name: "Colar Coração Liso",
-        category: "Colares",
-        badge: "",
-        variants: [
+
             {
-                material: "Ouro",
-                price: 49.90,
-                image: "colarcoracaoliso.png",
-                stock: true
-            },
-            {
-                material: "Prata",
-                price: 0.00,
-                image: "colarcoracaol.png",
-                stock: false
-            }
-        ]
-    },
-    {
         id: 15,
         name: "Brinco Argola Torcido P",
         category: "Brincos",
