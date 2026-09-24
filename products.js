@@ -405,7 +405,7 @@ const products = [
     id: 21,
     name: "Embalagem para Presente",
     category: "Presente",
-    badge: "",
+    badge: "Novidade",
     variants: [
         {
             material: "",
