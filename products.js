@@ -407,7 +407,7 @@ const products = [
         category: "Presente",
         badge: "",
         price: 0.00,
-        image: "",
+        image: "imagem.png",
         stock: false
     }
 ];
