@@ -401,6 +401,87 @@ const products = [
             }
         ]
     },
+             {
+        id: 25,
+        name: "Aguarde",
+        category: "Brincos",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 0.00,
+                image: "",
+                stock: false
+            },
+            {
+                material: "Prata",
+                price: 0.00,
+                image: "",
+                stock: false
+            }
+        ]
+    },
+
+             {
+        id: 26,
+        name: "Aguarde",
+        category: "Brincos",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 0.00,
+                image: "",
+                stock: false
+            },
+            {
+                material: "Prata",
+                price: 0.00,
+                image: "",
+                stock: false
+            }
+        ]
+    },
+             {
+        id: 27,
+        name: "Aguarde",
+        category: "Colares",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 0.00,
+                image: "",
+                stock: false
+            },
+            {
+                material: "Prata",
+                price: 0.00,
+                image: "",
+                stock: false
+            }
+        ]
+    },
+             {
+        id: 28,
+        name: "Aguarde",
+        category: "Colares",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 0.00,
+                image: "",
+                stock: false
+            },
+            {
+                material: "Prata",
+                price: 0.00,
+                image: "",
+                stock: false
+            }
+        ]
+    },
    {
     id: 21,
     name: "Embalagem para Presente",
