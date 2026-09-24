@@ -401,15 +401,26 @@ const products = [
             }
         ]
     },
-    {
-        id: 21,
-        name: "Embalagem para presente",
-        category: "Presente",
-        badge: "",
-        price: 0.00,
-        image: "imagem.png",
-        stock: false
-    }
+   {
+    id: 21,
+    name: "Embalagem para Presente",
+    category: "Presente",
+    badge: "",
+    variants: [
+        {
+            material: "",
+            price: 0.00,
+            image: "",
+            stock: false
+        },
+        {
+            material: "",
+            price: 0.00,
+            image: "",
+            stock: false
+        }
+    ]
+}
 ];
 
 console.log(
