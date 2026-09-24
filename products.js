@@ -381,7 +381,7 @@ const products = [
             }
         ]
     },
-    {
+       {
         id: 20,
         name: "Pulseira de Mão",
         category: "Pulseiras",
@@ -400,6 +400,15 @@ const products = [
                 stock: true
             }
         ]
+    },
+    {
+        id: 21,
+        name: "Embalagem para presente",
+        category: "Presente",
+        badge: "",
+        price: 0.00,
+        image: "",
+        stock: false
     }
 ];
 
