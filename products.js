@@ -1,4 +1,85 @@
 const products = [
+   {
+        id: 25,
+        name: "Brinco de Pressão Maia",
+        category: "Brincos",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 33.90,
+                image: "",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 29.90,
+                image: "",
+                stock: true
+            }
+        ]
+    },
+
+             {
+        id: 26,
+        name: "Brinco Trio Aurora",
+        category: "Brincos",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 44.90,
+                image: "",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 41.90,
+                image: "",
+                stock: true
+            }
+        ]
+    },
+             {
+        id: 27,
+        name: "Colar Iris",
+        category: "Colares",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 46.90,
+                image: "",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 42.90,
+                image: "",
+                stock: true
+            }
+        ]
+    },
+             {
+        id: 28,
+        name: "Colar Y Cora",
+        category: "Colares",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 71.90,
+                image: "",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 63.90,
+                image: "",
+                stock: true
+            }
+        ]
+    },
             
     {
         id: 23,
@@ -401,87 +482,7 @@ const products = [
             }
         ]
     },
-             {
-        id: 25,
-        name: "Aguarde",
-        category: "Brincos",
-        badge: "Novidade",
-        variants: [
-            {
-                material: "Ouro",
-                price: 0.00,
-                image: "",
-                stock: false
-            },
-            {
-                material: "Prata",
-                price: 0.00,
-                image: "",
-                stock: false
-            }
-        ]
-    },
-
-             {
-        id: 26,
-        name: "Aguarde",
-        category: "Brincos",
-        badge: "Novidade",
-        variants: [
-            {
-                material: "Ouro",
-                price: 0.00,
-                image: "",
-                stock: false
-            },
-            {
-                material: "Prata",
-                price: 0.00,
-                image: "",
-                stock: false
-            }
-        ]
-    },
-             {
-        id: 27,
-        name: "Aguarde",
-        category: "Colares",
-        badge: "Novidade",
-        variants: [
-            {
-                material: "Ouro",
-                price: 0.00,
-                image: "",
-                stock: false
-            },
-            {
-                material: "Prata",
-                price: 0.00,
-                image: "",
-                stock: false
-            }
-        ]
-    },
-             {
-        id: 28,
-        name: "Aguarde",
-        category: "Colares",
-        badge: "Novidade",
-        variants: [
-            {
-                material: "Ouro",
-                price: 0.00,
-                image: "",
-                stock: false
-            },
-            {
-                material: "Prata",
-                price: 0.00,
-                image: "",
-                stock: false
-            }
-        ]
-    },
+          
    {
     id: 21,
     name: "Embalagem para Presente",
@@ -490,9 +491,9 @@ const products = [
     variants: [
         {
             material: "",
-            price: 0.00,
+            price: 6.90,
             image: "",
-            stock: false
+            stock: true
         },
         {
             material: "",
