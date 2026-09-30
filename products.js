@@ -492,14 +492,14 @@ const products = [
         {
             material: "",
             price: 6.90,
-            image: "",
+            image: "sacola.jpeg",
             stock: true
         },
         {
             material: "",
-            price: 0.00,
+            price: 6.90,
             image: "",
-            stock: false
+            stock: true
         }
     ]
 }
