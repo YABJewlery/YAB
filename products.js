@@ -8,13 +8,13 @@ const products = [
             {
                 material: "Ouro",
                 price: 33.90,
-                image: "",
+                image: "maiaouro.jpg",
                 stock: true
             },
             {
                 material: "Prata",
                 price: 29.90,
-                image: "",
+                image: "maiaprata.jpg",
                 stock: true
             }
         ]
@@ -29,33 +29,33 @@ const products = [
             {
                 material: "Ouro",
                 price: 44.90,
-                image: "",
+                image: "auroraouro.jpg",
                 stock: true
             },
             {
                 material: "Prata",
                 price: 41.90,
-                image: "",
+                image: "auroraprata.jpg",
                 stock: true
             }
         ]
     },
              {
         id: 27,
-        name: "Colar Iris",
+        name: "Choker Iris",
         category: "Colares",
         badge: "Novidade",
         variants: [
             {
                 material: "Ouro",
                 price: 46.90,
-                image: "",
+                image: "irisouro.jpg",
                 stock: true
             },
             {
                 material: "Prata",
                 price: 42.90,
-                image: "",
+                image: "irisprata.jpg",
                 stock: true
             }
         ]
@@ -69,13 +69,13 @@ const products = [
             {
                 material: "Ouro",
                 price: 71.90,
-                image: "",
+                image: "coraouro.jpg",
                 stock: true
             },
             {
                 material: "Prata",
                 price: 63.90,
-                image: "",
+                image: "coraprata.jpg",
                 stock: true
             }
         ]
