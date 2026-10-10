@@ -131,13 +131,13 @@ const products = [
                 material: "Ouro",
                 price: 39.90,
                 image: "anelondinhas.png",
-                stock: false
+                stock: true
             },
             {
                 material: "Prata",
                 price: 36.90,
                 image: "anelondinhas1.png",
-                stock: false
+                stock: true
             }
         ]
     },
@@ -171,13 +171,13 @@ const products = [
                 material: "Ouro",
                 price: 49.90,
                 image: "anelcanelado1.png",
-                stock: false
+                stock: true
             },
             {
                 material: "Prata",
-                price: 0.00,
+                price: 44.90,
                 image: "anelcanelado.png",
-                stock: false
+                stock: true
             }
         ]
     },
@@ -191,13 +191,13 @@ const products = [
                 material: "Ouro",
                 price: 59.90,
                 image: "anelpontasa.png",
-                stock: false
+                stock: true
             },
             {
                 material: "Prata",
-                price: 0.00,
+                price: 57.90,
                 image: "anelpontas.png",
-                stock: false
+                stock: true
             }
         ]
     },
@@ -211,13 +211,13 @@ const products = [
                 material: "Ouro",
                 price: 54.90,
                 image: "quadrado1.png",
-                stock: false
+                stock: true
             },
             {
                 material: "Prata",
                 price: 48.90,
                 image: "quadrado.png",
-                stock: false
+                stock: true
             }
         ]
     },
@@ -277,7 +277,7 @@ const products = [
                 material: "Prata",
                 price: 58.90,
                 image: "anelplacalisa.png",
-                stock: false
+                stock: true
             }
         ]
     },
@@ -392,7 +392,7 @@ const products = [
                 material: "Ouro",
                 price: 42.90,
                 image: "argolapequena.jpg.jpeg",
-                stock: false
+                stock: true
             },
             {
                 material: "Prata",
