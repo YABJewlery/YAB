@@ -97,7 +97,7 @@ const products = [
                 material: "Prata",
                 price: 69.90,
                 image: "colarkairosprata.png",
-                stock: true
+                stock: false
             }
         ]
     },
@@ -171,7 +171,7 @@ const products = [
                 material: "Ouro",
                 price: 49.90,
                 image: "anelcanelado1.png",
-                stock: true
+                stock: false
             },
             {
                 material: "Prata",
