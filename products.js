@@ -191,7 +191,7 @@ const products = [
                 material: "Ouro",
                 price: 59.90,
                 image: "anelpontasa.png",
-                stock: true
+                stock: false
             },
             {
                 material: "Prata",
