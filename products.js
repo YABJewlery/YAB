@@ -1,26 +1,4 @@
 const products = [
-
-   {
-        id: 29,
-        name: "Anel Órbita",
-        category: "Anel",
-        badge: "Novidade",
-        variants: [
-            {
-                material: "Ouro",
-                price: 54.90,
-                image: "anelorbitaouro.jpg",
-                stock: true
-            },
-            {
-                material: "Prata",
-                price: 49.90,
-                image: "anelorbitaprata.jpg",
-                stock: true
-            }
-        ]
-    },
-
    
    {
         id: 25,
