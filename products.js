@@ -1,3 +1,4 @@
+
 const products = [
    
    {
@@ -21,7 +22,7 @@ const products = [
         ]
     },
 
-             {
+    {
         id: 26,
         name: "Brinco Trio Aurora",
         category: "Brincos",
@@ -41,7 +42,7 @@ const products = [
             }
         ]
     },
-             {
+    {
         id: 27,
         name: "Choker Iris",
         category: "Colares",
@@ -61,7 +62,7 @@ const products = [
             }
         ]
     },
-             {
+    {
         id: 28,
         name: "Colar Y Cora",
         category: "Colares",
@@ -382,8 +383,7 @@ const products = [
             }
         ]
     },
-
-            {
+    {
         id: 15,
         name: "Brinco Argola Torcido P",
         category: "Brincos",
@@ -463,7 +463,7 @@ const products = [
             }
         ]
     },
-       {
+    {
         id: 20,
         name: "Pulseira de Mão",
         category: "Pulseiras",
@@ -483,27 +483,51 @@ const products = [
             }
         ]
     },
-          
-   {
-    id: 21,
-    name: "Embalagem para Presente",
-    category: "Presente",
-    badge: "Novidade",
-    variants: [
-        {
-            material: "",
-            price: 6.90,
-            image: "sacola.jpeg",
-            stock: true
-        },
-        {
-            material: "",
-            price: 6.90,
-            image: "",
-            stock: true
-        }
-    ]
-}
+    {
+        id: 21,
+        name: "Embalagem para Presente",
+        category: "Presente",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "",
+                price: 6.90,
+                image: "sacola.jpeg",
+                stock: true
+            },
+            {
+                material: "",
+                price: 6.90,
+                image: "",
+                stock: true
+            }
+        ]
+    },
+
+    /* ==========================================
+       NOVA CATEGORIA HADES
+    ========================================== */
+
+    {
+        id: 29,
+        name: "Pulseira Fina Hades",
+        category: "Hades",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 49.90,
+                image: "hadesouro.jpg",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 44.90,
+                image: "hadesprata.jpg",
+                stock: true
+            }
+        ]
+    }
 ];
 
 console.log(
