@@ -5,7 +5,7 @@ const products = [
         id: 25,
         name: "Brinco de Pressão Maia",
         category: "Brincos",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -26,7 +26,7 @@ const products = [
         id: 26,
         name: "Brinco Trio Aurora",
         category: "Brincos",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -46,7 +46,7 @@ const products = [
         id: 27,
         name: "Choker Iris",
         category: "Colares",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -66,7 +66,7 @@ const products = [
         id: 28,
         name: "Colar Y Cora",
         category: "Colares",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -508,26 +508,7 @@ const products = [
        NOVA CATEGORIA HADES
     ========================================== */
 
-    {
-        id: 29,
-        name: "Pulseira Fina Hades",
-        category: "Hades",
-        badge: "Novidade",
-        variants: [
-            {
-                material: "Ouro",
-                price: 49.90,
-                image: "hadesouro.jpg",
-                stock: true
-            },
-            {
-                material: "Prata",
-                price: 44.90,
-                image: "hadesprata.jpg",
-                stock: true
-            }
-        ]
-    }
+    
 ];
 
 console.log(
