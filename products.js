@@ -613,6 +613,8 @@ const products = [
         ]
     },
 
+   ];
+
 
 
 console.log(
