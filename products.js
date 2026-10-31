@@ -511,6 +511,112 @@ const products = [
     
 ];
 
+{
+        id: 44,
+        name: "Corrente Grumet Lagosta",
+        category: "Hades",
+        badge: "MASCULINO",
+        variants: [
+            {
+                material: "Prata",
+                price: 84.90,
+                image: "correntemasc.jpg",
+                stock: true
+            },
+            {
+                material: "Ouro",
+                price: 0.00,
+                image: "correntemasc.jpg",
+                stock: false
+            }
+        ]
+    },
+
+{
+        id: 45,
+        name: "Corrente Retângulo Vazado",
+        category: "Hades",
+        badge: "MASCULINO",
+        variants: [
+            {
+                material: "Prata",
+                price: 71.90,
+                image: "retangulomasc.jpg",
+                stock: true
+            },
+            {
+                material: "Ouro",
+                price: 0.00,
+                image: "retangulomasc.jpg",
+                stock: false
+            }
+        ]
+    },
+
+{
+        id: 46,
+        name: "Corrente Ponto Preto",
+        category: "Hades",
+        badge: "MASCULINO",
+        variants: [
+            {
+                material: "Prata",
+                price: 48.90,
+                image: "pontodeluzmas.jpg",
+                stock: true
+            },
+            {
+                material: "Ouro",
+                price: 0.00,
+                image: "pontodeluzmas.jpg",
+                stock: false
+            }
+        ]
+    },
+
+{
+        id: 47,
+        name: "Pulseira Grumet",
+        category: "Hades",
+        badge: "MASCULINO",
+        variants: [
+            {
+                material: "Prata",
+                price: 53.90,
+                image: "pulsmasculinogrumet.jpg",
+                stock: true
+            },
+            {
+                material: "Ouro",
+                price: 0.00,
+                image: "pulsmasculinogrumet.jpg",
+                stock: false
+            }
+        ]
+    },
+{
+        id: 48,
+        name: "Pulseira 3x1",
+        category: "Hades",
+        badge: "MASCULINO",
+        variants: [
+            {
+                material: "Prata",
+                price: 49.90,
+                image: "pulsmasculino3.jpg",
+                stock: true
+            },
+            {
+                material: "Ouro",
+                price: 0.00,
+                image: "pulsmasculino3.jpg",
+                stock: false
+            }
+        ]
+    },
+
+
+
 console.log(
     "Produtos carregados:",
     products.length
