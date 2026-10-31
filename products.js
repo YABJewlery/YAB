@@ -508,8 +508,6 @@ const products = [
        NOVA CATEGORIA HADES
     ========================================== */
 
-    
-];
 
 {
         id: 44,
