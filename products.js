@@ -611,7 +611,7 @@ const products = [
                 stock: false
             }
         ]
-    },
+    }
 
    ];
 
