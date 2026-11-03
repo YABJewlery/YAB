@@ -1,5 +1,355 @@
 
 const products = [
+
+{
+        id: 29,
+        name: "Anel Órbita",
+        category: "Anel",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 54.90,
+                image: "anelorbitaouro.jpg",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 49.90,
+                image: "anelorbitaprata.jpg",
+                stock: true
+            }
+        ]
+    },
+
+{
+        id: 30,
+        name: "Anel Eclipse",
+        category: "Anel",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 47.90,
+                image: "aneleclipseouro.jpg",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 44.90,
+                image: "aneleclipseprata.jpg",
+                stock: true
+            }
+        ]
+    },
+
+{
+        id: 31,
+        name: "Brinco Oceano",
+        category: "Brincos",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 38.90,
+                image: "brincooceanoouro.jpg",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 34.90,
+                image: "brincooceanoprata.jpg",
+                stock: true
+            }
+        ]
+    },
+
+{
+        id: 32,
+        name: "Brinco Vênus",
+        category: "Brincos",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 38.90,
+                image: "brincovenusouro.jpg",
+                stock: true
+            },
+
+            {
+                material: "Prata",
+                price: 34.90,
+                image: "brincovenusprata.jpg",
+                stock: true
+            }
+        ]
+    },
+
+
+{
+        id: 33,
+        name: "Brinco Amuleto",
+        category: "Brincos",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 37.90,
+                image: "brincoamuletoouro.jpg",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 34.90,
+                image: "brincoamuletoprata.jpg",
+                stock: true
+            }
+        ]
+    },
+
+
+{
+        id: 33,
+        name: "Brinco de Pressão Onda",
+        category: "Brincos",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 27.90,
+                image: "pressaoondaouro.jpg",
+                stock: false
+            },
+            {
+                material: "Prata",
+                price: 24.90,
+                image: "pressaoondaprata.jpg",
+                stock: true
+            }
+        ]
+    },
+
+
+{
+        id: 34,
+        name: "Brinco Dafne",
+        category: "Brincos",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 35.90,
+                image: "brincodafneouro.jpg",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 33.90,
+                image: "brincodafneprata.jpg",
+                stock: true
+            }
+        ]
+    },
+
+
+{
+        id: 35,
+        name: "Brinco Nix",
+        category: "Brincos",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 44.90,
+                image: "brinconixouro.jpg",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 40.90,
+                image: "brinconixprata.jpg",
+                stock: true
+            }
+        ]
+    },
+
+
+{
+        id: 36,
+        name: "Argola Halo P",
+        category: "Brincos",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 33.90,
+                image: "argolahaloouro.jpg",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 30.90,
+                image: "argolahaloprata.jpg",
+                stock: true
+            }
+        ]
+    },
+
+
+{
+        id: 37,
+        name: "Bracelete Stella",
+        category: "Pulseiras",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 45.90,
+                image: "braceletestelaouro.jpg",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 41.90,
+                image: "braceletestelaprata.jpg",
+                stock: true
+            }
+        ]
+    },
+
+
+{
+        id: 38,
+        name: "Bracelete Dueto",
+        category: "Pulseiras",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 54.90,
+                image: "braceleteduetoouro.jpg",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 49.90,
+                image: "braceleteduetoprata.jpg",
+                stock: true
+            }
+        ]
+    },
+
+
+{
+        id: 39,
+        name: "Colar Aura",
+        category: "Colares",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 55.90,
+                image: "colarauraouro.jpg",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 50.90,
+                image: "colarauraprata.jpg",
+                stock: true
+            }
+        ]
+    },
+
+
+{
+        id: 40,
+        name: "Colar Lumi",
+        category: "Colares",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 59.90,
+                image: "colarlumiouro.jpg",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 54.90,
+                image: "colarlumiprata.jpg",
+                stock: true
+            }
+        ]
+    },
+
+
+{
+        id: 41,
+        name: "Choker Dione",
+        category: "Colares",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 49.90,
+                image: "chokerdioneouro.jpg",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 46.90,
+                image: "chokerdioneprata.jpg",
+                stock: true
+            }
+        ]
+    },
+
+
+{
+        id: 42,
+        name: "Pulseira Marina",
+        category: "Pulseiras",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 34.90,
+                image: "pulsmarinaouro.jpg",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 29.90,
+                image: "pulsmarinaprata.jpg",
+                stock: true
+            }
+        ]
+    },
+
+
+{
+        id: 43,
+        name: "Tornozeleira Búzios",
+        category: "Pulseiras",
+        badge: "Novidade",
+        variants: [
+            {
+                material: "Ouro",
+                price: 34.90,
+                image: "pulsbuziosouro.jpg",
+                stock: true
+            },
+            {
+                material: "Prata",
+                price: 29.90,
+                image: "pulsbuziosprata.jpg",
+                stock: true
+            }
+        ]
+    },
+
    
    {
         id: 25,
