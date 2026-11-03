@@ -323,7 +323,7 @@ const products = [
                 material: "Prata",
                 price: 29.90,
                 image: "pulsmarinaprata.jpg",
-                stock: true
+                stock: false
             }
         ]
     },
