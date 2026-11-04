@@ -306,50 +306,6 @@ const products = [
         ]
     },
 
-
-{
-        id: 42,
-        name: "Pulseira Marina",
-        category: "Pulseiras",
-        badge: "Novidade",
-        variants: [
-            {
-                material: "Ouro",
-                price: 34.90,
-                image: "pulsmarinaouro.jpg",
-                stock: true
-            },
-            {
-                material: "Prata",
-                price: 29.90,
-                image: "pulsmarinaprata.jpg",
-                stock: false
-            }
-        ]
-    },
-
-
-{
-        id: 43,
-        name: "Tornozeleira Búzios",
-        category: "Pulseiras",
-        badge: "Novidade",
-        variants: [
-            {
-                material: "Ouro",
-                price: 34.90,
-                image: "pulsbuziosouro.jpg",
-                stock: true
-            },
-            {
-                material: "Prata",
-                price: 29.90,
-                image: "pulsbuziosprata.jpg",
-                stock: true
-            }
-        ]
-    },
-
    
    {
         id: 25,
