@@ -273,7 +273,7 @@ const products = [
                 material: "Ouro",
                 price: 59.90,
                 image: "colarlumiouro1.jpg",
-                stock: true
+                stock: false
             },
             {
                 material: "Prata",
@@ -719,7 +719,7 @@ const products = [
                 material: "Ouro",
                 price: 75.90,
                 image: "colaroctagonalv1.png",
-                stock: true
+                stock: false
             },
             {
                 material: "Prata",
