@@ -505,7 +505,7 @@ const products = [
                 material: "Prata",
                 price: 57.90,
                 image: "anelpontas.png",
-                stock: true
+                stock: false
             }
         ]
     },
