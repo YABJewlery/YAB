@@ -332,7 +332,7 @@ const products = [
         id: 26,
         name: "Brinco Trio Aurora",
         category: "Brincos",
-        badge: "",
+        badge: "19% OFF",
         variants: [
             {
                 material: "Ouro",
@@ -372,7 +372,7 @@ const products = [
         id: 28,
         name: "Colar Y Cora",
         category: "Colares",
-        badge: "",
+        badge: "19% OFF",
         variants: [
             {
                 material: "Ouro",
@@ -393,7 +393,7 @@ const products = [
         id: 23,
         name: "Colar Duplo Kairos",
         category: "Colares",
-        badge: "",
+        badge: "20% OFF",
         variants: [
             {
                 material: "Ouro",
@@ -413,7 +413,7 @@ const products = [
         id: 24,
         name: "Brinco Kairos",
         category: "Brincos",
-        badge: "",
+        badge: "20% OFF",
         variants: [
             {
                 material: "Ouro",
@@ -553,7 +553,7 @@ const products = [
         id: 7,
         name: "Anel Meia Lua",
         category: "Anéis",
-        badge: "",
+        badge: "26% OFF",
         variants: [
             {
                 material: "Ouro",
@@ -633,7 +633,7 @@ const products = [
         id: 11,
         name: "Brinco Gota Riscado",
         category: "Brincos",
-        badge: "",
+        badge: "21% OFF",
         variants: [
             {
                 material: "Ouro",
@@ -653,7 +653,7 @@ const products = [
         id: 12,
         name: "Brinco Retangulo",
         category: "Brincos",
-        badge: "",
+        badge: "22% OFF",
         variants: [
             {
                 material: "Ouro",
@@ -673,7 +673,7 @@ const products = [
         id: 13,
         name: "Choker fita",
         category: "Colares",
-        badge: "",
+        badge: "20% OFF",
         variants: [
             {
                 material: "Ouro",
@@ -693,7 +693,7 @@ const products = [
         id: 15,
         name: "Brinco Argola Torcido P",
         category: "Brincos",
-        badge: "",
+        badge: "19% OFF",
         variants: [
             {
                 material: "Ouro",
@@ -753,7 +753,7 @@ const products = [
         id: 19,
         name: "Pulseira Coração",
         category: "Pulseiras",
-        badge: "",
+        badge: "16% OFF",
         variants: [
             {
                 material: "Ouro",
@@ -773,7 +773,7 @@ const products = [
         id: 20,
         name: "Pulseira de Mão",
         category: "Pulseiras",
-        badge: "",
+        badge: "22% OFF",
         variants: [
             {
                 material: "Ouro",
@@ -840,7 +840,7 @@ const products = [
         id: 45,
         name: "Corrente Retângulo Vazado",
         category: "Hades",
-        badge: "MASCULINO",
+        badge: "17% OFF",
         variants: [
             {
                 material: "Prata",
@@ -927,6 +927,7 @@ console.log(
     "Produtos carregados:",
     products.length
 );
+
 
 
 
