@@ -453,11 +453,11 @@ const products = [
         id: 2,
         name: "Anel Falange",
         category: "Anéis",
-        badge: "",
+        badge: "20% OFF",
         variants: [
             {
                 material: "Ouro",
-                price: 49.90,
+                price: 39.90,
                 image: "falange.jpeg",
                 stock: true
             },
@@ -927,4 +927,5 @@ console.log(
     "Produtos carregados:",
     products.length
 );
+
 
