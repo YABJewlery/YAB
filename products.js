@@ -793,7 +793,7 @@ const products = [
         id: 21,
         name: "Embalagem para Presente",
         category: "Presente",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "",
@@ -819,7 +819,7 @@ const products = [
         id: 44,
         name: "Corrente Grumet Lagosta",
         category: "Hades",
-        badge: "MASCULINO",
+        badge: "",
         variants: [
             {
                 material: "Prata",
@@ -861,7 +861,7 @@ const products = [
         id: 46,
         name: "Corrente Ponto Preto",
         category: "Hades",
-        badge: "MASCULINO",
+        badge: "",
         variants: [
             {
                 material: "Prata",
@@ -882,7 +882,7 @@ const products = [
         id: 47,
         name: "Pulseira Grumet",
         category: "Hades",
-        badge: "MASCULINO",
+        badge: "",
         variants: [
             {
                 material: "Prata",
@@ -902,7 +902,7 @@ const products = [
         id: 48,
         name: "Pulseira 3x1",
         category: "Hades",
-        badge: "MASCULINO",
+        badge: "",
         variants: [
             {
                 material: "Prata",
@@ -927,6 +927,7 @@ console.log(
     "Produtos carregados:",
     products.length
 );
+
 
 
 
