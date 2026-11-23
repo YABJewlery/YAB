@@ -458,7 +458,7 @@ const products = [
             {
                 material: "Ouro",
                 price: 49.90,
-                image: "anelfalanger.png",
+                image: "falange.jpeg",
                 stock: true
             },
             {
@@ -927,3 +927,4 @@ console.log(
     "Produtos carregados:",
     products.length
 );
+
