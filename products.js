@@ -279,7 +279,7 @@ const products = [
                 material: "Prata",
                 price: 54.90,
                 image: "colarlumiprata.jpg",
-                stock: true
+                stock: false
             }
         ]
     },
@@ -529,26 +529,7 @@ const products = [
             }
         ]
     },
-    {
-        id: 6,
-        name: "Anel Giratorio",
-        category: "Anéis",
-        badge: "",
-        variants: [
-            {
-                material: "Ouro",
-                price: 64.90,
-                image: "anelgira.png",
-                stock: false
-            },
-            {
-                material: "Prata",
-                price: 57.90,
-                image: "anelgiral.png",
-                stock: false
-            }
-        ]
-    },
+    
     {
         id: 7,
         name: "Anel Meia Lua",
@@ -649,6 +630,7 @@ const products = [
             }
         ]
     },
+
     {
         id: 12,
         name: "Brinco Retangulo",
@@ -669,26 +651,7 @@ const products = [
             }
         ]
     },
-    {
-        id: 13,
-        name: "Choker fita",
-        category: "Colares",
-        badge: "20% OFF",
-        variants: [
-            {
-                material: "Ouro",
-                price: 89.90,
-                image: "chokerfita1.png",
-                stock: true
-            },
-            {
-                material: "Prata",
-                price: 0.00,
-                image: "chokerfita.png",
-                stock: true
-            }
-        ]
-    },
+    
     {
         id: 15,
         name: "Brinco Argola Torcido P",
