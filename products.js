@@ -317,7 +317,7 @@ const products = [
                 material: "Ouro",
                 price: 33.90,
                 image: "maiaouro.jpg",
-                stock: true
+                stock: false
             },
             {
                 material: "Prata",
