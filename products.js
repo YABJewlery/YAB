@@ -4,8 +4,8 @@ const products = [
 {
         id: 29,
         name: "Anel Órbita",
-        category: "Anel",
-        badge: "Novidade",
+        category: "Anéis",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -25,8 +25,8 @@ const products = [
 {
         id: 30,
         name: "Anel Eclipse",
-        category: "Anel",
-        badge: "Novidade",
+        category: "Anéis",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -47,7 +47,7 @@ const products = [
         id: 31,
         name: "Brinco Oceano",
         category: "Brincos",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -68,7 +68,7 @@ const products = [
         id: 32,
         name: "Brinco Vênus",
         category: "Brincos",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -91,7 +91,7 @@ const products = [
         id: 33,
         name: "Brinco Amuleto",
         category: "Brincos",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -113,7 +113,7 @@ const products = [
         id: 33,
         name: "Brinco de Pressão Onda",
         category: "Brincos",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -135,7 +135,7 @@ const products = [
         id: 34,
         name: "Brinco Dafne",
         category: "Brincos",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -157,7 +157,7 @@ const products = [
         id: 35,
         name: "Brinco Nix",
         category: "Brincos",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -179,7 +179,7 @@ const products = [
         id: 36,
         name: "Argola Halo P",
         category: "Brincos",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -201,7 +201,7 @@ const products = [
         id: 37,
         name: "Bracelete Stella",
         category: "Pulseiras",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -223,7 +223,7 @@ const products = [
         id: 38,
         name: "Bracelete Dueto",
         category: "Pulseiras",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -245,7 +245,7 @@ const products = [
         id: 39,
         name: "Colar Aura",
         category: "Colares",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -267,7 +267,7 @@ const products = [
         id: 40,
         name: "Colar Lumi",
         category: "Colares",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
@@ -289,7 +289,7 @@ const products = [
         id: 41,
         name: "Choker Dione",
         category: "Colares",
-        badge: "Novidade",
+        badge: "",
         variants: [
             {
                 material: "Ouro",
