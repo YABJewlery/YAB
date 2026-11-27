@@ -342,7 +342,7 @@ const products = [
             },
             {
                 material: "Prata",
-                price: 41.90,
+                price: 33.90,
                 image: "auroraprata.jpg",
                 stock: true
             }
@@ -376,13 +376,13 @@ const products = [
         variants: [
             {
                 material: "Ouro",
-                price: 71.90,
+                price: 57.90,
                 image: "coraouro.jpg",
                 stock: true
             },
             {
                 material: "Prata",
-                price: 63.90,
+                price: 50.90,
                 image: "coraprata.jpg",
                 stock: true
             }
@@ -397,7 +397,7 @@ const products = [
         variants: [
             {
                 material: "Ouro",
-                price: 74.90,
+                price: 59.90,
                 image: "colarkariosouro.png",
                 stock: true
             },
@@ -417,13 +417,13 @@ const products = [
         variants: [
             {
                 material: "Ouro",
-                price: 46.90,
+                price: 37.90,
                 image: "kairosouro.png",
                 stock: true
             },
             {
                 material: "Prata",
-                price: 43.90,
+                price: 35.90,
                 image: "kairosprata.png",
                 stock: true
             }
@@ -457,7 +457,7 @@ const products = [
         variants: [
             {
                 material: "Ouro",
-                price: 49.90,
+                price: 39.90,
                 image: "anelfalanger.png",
                 stock: true
             },
@@ -538,13 +538,13 @@ const products = [
         variants: [
             {
                 material: "Ouro",
-                price: 53.90,
+                price: 39.90,
                 image: "anelmeial.png",
                 stock: true
             },
             {
                 material: "Prata",
-                price: 46.90,
+                price: 34.90,
                 image: "anelmeia.png",
                 stock: true
             }
@@ -620,11 +620,11 @@ const products = [
                 material: "Ouro",
                 price: 49.90,
                 image: "brincogotariscado1.png",
-                stock: true
+                stock: false
             },
             {
                 material: "Prata",
-                price: 38.90,
+                price: 30.90,
                 image: "brincogotariscado.png",
                 stock: true
             }
@@ -660,13 +660,13 @@ const products = [
         variants: [
             {
                 material: "Ouro",
-                price: 42.90,
+                price: 34.90,
                 image: "argolapequena.jpg.jpeg",
                 stock: true
             },
             {
                 material: "Prata",
-                price: 36.90,
+                price: 29.90,
                 image: "argolapequenaP.jpg.jpeg",
                 stock: true
             }
@@ -720,13 +720,13 @@ const products = [
         variants: [
             {
                 material: "Ouro",
-                price: 48.90,
+                price: 40.90,
                 image: "coracaoverde.png",
                 stock: true
             },
             {
                 material: "Prata",
-                price: 41.90,
+                price: 34.90,
                 image: "coracaoverde1.png",
                 stock: true
             }
@@ -746,7 +746,7 @@ const products = [
             },
             {
                 material: "Prata",
-                price: 40.90,
+                price: 31.90,
                 image: "pulseirarisquinhoam.png",
                 stock: true
             }
@@ -807,7 +807,7 @@ const products = [
         variants: [
             {
                 material: "Prata",
-                price: 71.90,
+                price: 59.90,
                 image: "retangulomasc.jpg",
                 stock: true
             },
